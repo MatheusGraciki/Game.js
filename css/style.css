@@ -1,9 +1,9 @@
-
- .game-board{
+  
+   .game-board{
       width: 100%;
-    height: 800px;
+      height: 800px;
       margin: 0 ;
-    overflow: hidden;
+      overflow: hidden;   
       background:-moz-linear-gradient(#87CEEB, #E0F6FF);
    }
 
@@ -14,7 +14,7 @@
       bottom: 54%;
       left: 36%;
    }
-    
+
    .mystery-block-aboutMe{
       position: absolute;
       width: 7%;
@@ -29,18 +29,18 @@
       height: 7%;
       bottom: 54%;
       left: 50%;
- }
+   }
 
- .floor-block{
-    background-image: url('../images/FloorBlock.png');
+   .floor-block{
+      background-image: url('../images/FloorBlock.png');
       background-repeat: repeat-x, repeat-y; 
       width: 100%; 
       height: 14%; 
       position: fixed;
       bottom: 0; 
       left: 0; 
-    margin: 0%;
-    padding: 0%;
+      margin: 0%;
+      padding: 0%;
    }
 
    .mario{
@@ -49,6 +49,53 @@
       left:0%;
       height: 22%;
    }
-    
-    
- }
+
+   .mario.flip{
+      transform: scaleX(-1);
+   }
+
+   .jump{
+      animation: jump 450ms ease-out;
+   }
+
+   @keyframes jump{
+      0% {
+         bottom: 17%;
+      }
+      10%{
+         bottom: 27%;
+      }
+      20%{
+         bottom: 30%
+      }
+
+      30% {
+         bottom: 34%
+      }
+
+      40% {
+         bottom: 38%
+      }
+
+      50% {
+         bottom: 40%
+      }
+
+      70%{
+         bottom:38%
+      }
+
+      80%{
+         bottom: 34%
+      }
+
+      90%{
+         bottom:27%
+      }
+
+      100% {
+         bottom: 17%;
+      }
+   }
+
+   
