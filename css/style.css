@@ -1,29 +1,54 @@
- *{
-    margin-top: 1.2%;
-    padding: 0;
-    box-sizing: border-box;
- }
 
  .game-board{
-    width: 90%;
+      width: 100%;
     height: 800px;
-    border: 1px solid #333;
-    margin: 0 auto;
-    position: relative;
+      margin: 0 ;
     overflow: hidden;
+      background:-moz-linear-gradient(#87CEEB, #E0F6FF);
+   }
+
+   .mystery-block-myDegrees{
+      position: absolute;
+      width: 7%;
+      height: 7%;
+      bottom: 54%;
+      left: 36%;
+   }
     
+   .mystery-block-aboutMe{
+      position: absolute;
+      width: 7%;
+      height: 7%;
+      bottom: 54%;
+      left: 43%;
+   }
+   
+   .mystery-block-myHobbies{
+      position: absolute;
+      width: 7%;
+      height: 7%;
+      bottom: 54%;
+      left: 50%;
  }
 
  .floor-block{
     background-image: url('../images/FloorBlock.png');
-    background-repeat: repeat-x; /* Repete apenas horizontalmente */
-    width: 100%; /* Define a largura como 6% da largura da tela */
-    height: 19%; /* Define a altura como 12% da altura da tela */
-    position: absolute; /* Mantém a imagem fixa na tela */
-    bottom: 0; /* Coloca a imagem no topo da tela */
-    left: 0; /* Coloca a imagem no canto esquerdo da tela */
+      background-repeat: repeat-x, repeat-y; 
+      width: 100%; 
+      height: 14%; 
+      position: fixed;
+      bottom: 0; 
+      left: 0; 
     margin: 0%;
     padding: 0%;
+   }
+
+   .mario{
+      position: absolute;
+      bottom: 14%;
+      left:0%;
+      height: 22%;
+   }
     
     
  }
