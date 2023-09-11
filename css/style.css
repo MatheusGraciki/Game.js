@@ -1,101 +1,101 @@
-  
-   .game-board{
-      width: 100%;
-      height: 800px;
-      margin: 0 ;
-      overflow: hidden;   
-      background:-moz-linear-gradient(#87CEEB, #E0F6FF);
-   }
+#game-board {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    overflow: hidden;
+    background: -moz-radial-gradient(#7cc1f0, #4e8dcc);
+}
 
-   .mystery-block-myDegrees{
-      position: absolute;
-      width: 7%;
-      height: 7%;
-      bottom: 54%;
-      left: 36%;
-   }
+.mystery-blocks {
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    bottom: 54%;
+}
 
-   .mystery-block-aboutMe{
-      position: absolute;
-      width: 7%;
-      height: 7%;
-      bottom: 54%;
-      left: 43%;
-   }
-   
-   .mystery-block-myHobbies{
-      position: absolute;
-      width: 7%;
-      height: 7%;
-      bottom: 54%;
-      left: 50%;
-   }
+#mystery-block-myDegrees {
+    left: 36%;
+}
 
-   .floor-block{
-      background-image: url('../images/FloorBlock.png');
-      background-repeat: repeat-x, repeat-y; 
-      width: 100%; 
-      height: 14%; 
-      position: fixed;
-      bottom: 0; 
-      left: 0; 
-      margin: 0%;
-      padding: 0%;
-   }
+#mystery-block-aboutMe {
+    left: 43%;
+}
 
-   .mario{
-      position: absolute;
-      bottom: 14%;
-      left:0%;
-      height: 22%;
-   }
+#mystery-block-myHobbies {
+    left: 50%;
+}
 
-   .mario.flip{
-      transform: scaleX(-1);
-   }
+.floor-block {
+    background-image: url('../images/FloorBlock.png');
+    background-repeat: repeat-x, repeat-y;
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0%;
+    padding: 0%;
+}
 
-   .jump{
-      animation: jump 450ms ease-out;
-   }
+.mario {
+    position: absolute;
+    bottom: 14%;
+    left: 0%;
+    height: 22%;
+}
 
-   @keyframes jump{
-      0% {
-         bottom: 17%;
-      }
-      10%{
-         bottom: 27%;
-      }
-      20%{
-         bottom: 30%
-      }
+.mario.flip {
+    transform: scaleX(-1);
+}
 
-      30% {
-         bottom: 34%
-      }
+.jump {
+    animation: jump 450ms ease-out;
+}
 
-      40% {
-         bottom: 38%
-      }
+@keyframes jump {
+    0% {
+        bottom: 17%;
+    }
+    10% {
+        bottom: 27%;
+    }
+    20% {
+        bottom: 30%
+    }
+    30% {
+        bottom: 34%
+    }
+    40% {
+        bottom: 38%
+    }
+    50% {
+        bottom: 40%
+    }
+    70% {
+        bottom: 38%
+    }
+    80% {
+        bottom: 34%
+    }
+    90% {
+        bottom: 27%
+    }
+    100% {
+        bottom: 17%;
+    }
+}
 
-      50% {
-         bottom: 40%
-      }
+#myDegrees-field,
+#aboutMe-field,
+#myHobbies-field {
+    display: none;
+    color: rebeccapurple;
+}
 
-      70%{
-         bottom:38%
-      }
+#aboutMe-field {
+    color: white;
+}
 
-      80%{
-         bottom: 34%
-      }
-
-      90%{
-         bottom:27%
-      }
-
-      100% {
-         bottom: 17%;
-      }
-   }
-
-   
+#myHobbies-field {
+    color: red;
+}
