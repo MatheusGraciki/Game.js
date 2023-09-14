@@ -17,7 +17,6 @@ const jump = () => {
         setTimeout(() => {
             playerMario.classList.remove('jump');
             isJumping = false;
-            detectCollision();
         }, 450);
     }
 };
