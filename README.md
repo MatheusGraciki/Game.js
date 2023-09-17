@@ -9,7 +9,7 @@ Este é um jogo simples inspirado no Mario, construído com HTML, CSS e JavaScri
 
 - Use as teclas a ou ← para se mover para a esquerda e d ou → para se mover para a direita 
 - Pressione a tecla de seta para cima (↑) ou a tecla "W" para fazer o Mario pular.
-- O objetivo do jogo é coletar moedas ao colidir com os blocos misteriosos.
+- O objetivo do jogo  é mostrar campos de texto quando colidimos no mystery block
 
 ## Funcionalidades
 
